@@ -1,0 +1,20 @@
+version: '3.8'
+services:
+  user-profile:
+    build: ./user-profile
+    platform: linux/amd64
+    container_name: user-profile
+    ports:
+      - "8081:80"
+  dashboard:
+    build: ./dashboard
+    platform: linux/amd64
+    container_name: dashboard
+    ports:
+      - "8082:80"
+  host:
+    build: ./host
+    platform: linux/amd64
+    container_name: host
+    ports:
+      - "8080:80" 
