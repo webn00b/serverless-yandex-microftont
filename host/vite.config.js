@@ -9,8 +9,8 @@ export default defineConfig({
     federation({
       name: 'host',
       remotes: {
-        'user-profile': 'userProfileApp@/user-profile/assets/remoteEntry.js',
-        'dashboard': 'dashboardApp@/dashboard/assets/remoteEntry.js',
+        'user-profile': 'https://bba0t23at05f8ahb9q4b.containers.yandexcloud.net/assets/remoteEntry.js',
+        'dashboard': 'https://bbaoj4qinlq3eoudcbbu.containers.yandexcloud.net/assets/remoteEntry.js',
       },
       shared: ['vue']
     })
