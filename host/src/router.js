@@ -2,9 +2,11 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 const UserProfile = () => import('user-profile/UserProfile')
 const Dashboard = () => import('dashboard/Dashboard')
+import App from './App.vue'
+import Home from './components/Home.vue'
 
 const routes = [
-  { path: '/', redirect: '/user-profile' },
+  { path: '/', component: Home },
   { path: '/user-profile', component: UserProfile },
   { path: '/dashboard', component: Dashboard },
 ]
